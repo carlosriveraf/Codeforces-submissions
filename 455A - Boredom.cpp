@@ -11,13 +11,13 @@ int main(){
 	
 	while( n-- ) {
 		cin>>a; v[a]++;
-		b = max( a , b );
+		b = max( a, b );
 	}
 	
 	f[0] = 0 ; f[1] = v[1];
 		
 	for( int i = 2 ; i <= b ; i++ ) {	
-		f[i] = max( f[i-1] , f[i-2] + (v[i]*i) );
+		f[i] = max( f[i-1], f[i-2] + (v[i]*i) );
 	}
 	
 	cout<<f[b]<<endl;
