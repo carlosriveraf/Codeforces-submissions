@@ -9,7 +9,7 @@ int main () {
 	
 	string a, b, c;
 	
-	for( int i=1 ; i<=m ; i++ ) {
+	for( int i = 1 ; i <= m ; i++ ) {
 		cin>>a>>b;
 		
 		if( a.size() <= b.size() ) { map[a] = a; }
@@ -17,7 +17,7 @@ int main () {
 		
 	}
 	
-	for( int i=1 ; i<=n ; i++ ) {
+	for( int i = 1 ; i <= n ; i++ ) {
 		cin>>c;
 		cout<<map[c]<<" ";	
 	}
