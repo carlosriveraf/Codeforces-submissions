@@ -12,7 +12,7 @@ int year( int a ) {
 	}
 	
 	if( b.size() == 4 ) return a;
-	else return year(a+1);
+	else return year( a + 1 );
 }
 
 int main() {
