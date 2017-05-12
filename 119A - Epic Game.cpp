@@ -6,7 +6,6 @@ int GCD( int a, int b ) {
      return GCD ( b, a % b );
 }
 
-
 int main() {	
 	int a, b, n;
 	scanf( "%d %d %d", &a, &b, &n );
