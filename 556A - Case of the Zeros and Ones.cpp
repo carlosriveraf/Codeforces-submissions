@@ -2,26 +2,20 @@
 using namespace std;
 
 int main() {
-	int n; scanf( "%d", &n );
-
-	char number[n];
-	for( int i = 0 ; i < n ; i++ ) {
-		cin >> number[i];
-	}
+	int n; cin >> n;
+	string s; cin >> s;
 	
-	int a;
-	stack<int> s;
+	int c0 = 0, c1 = 0;
 	for( int i = 0 ; i < n ; i++ ) {
-		a = number[i];
-		if( !s.empty() && a != s.top() ) {
-			s.pop();
+		if( s[i] == '0' ) {
+			c0++;
 		}
 		else{
-			s.push(a);
-		}		
+			c1++;
+		}
 	}
 	
-	cout << s.size();
-	
+	cout << n - 2 * min( c0, c1 );
+		
 	return 0;
 }
